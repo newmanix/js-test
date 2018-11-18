@@ -5,7 +5,7 @@
     <title>Eddie Browser Outfitters</title>
     <meta name="robots" content="noindex,nofollow" />
 	<!-- below is a google font, go to https://www.google.com/fonts to get yours! -->
-	<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/default.css" />
     <style type="text/css">
 	
@@ -109,12 +109,34 @@
 			
             switch(season)
            {
-               case 'Summer':
-               $('#logo').attr('src', 'images/summer.gif');
-               $('#wear').attr('src', 'images/summer-wear.jpg');
-               $("html").css("background-color", "#EBA52B");
-               $("#banner").html("Summer here and some are not!");
-               break;
+                case 'Summer':
+                    $('#logo').attr('src', 'images/summer.gif');
+                    $('#wear').attr('src', 'images/summer-wear.jpg');
+                    $("html").css("background-color", "#EBA52B");
+                    $("#banner").html("Summer here and some are not!");
+                break;
+                   
+                case 'Spring':
+                   $('#logo').attr('src', 'images/spring.gif');
+                   $('#wear').attr('src', 'images/spring-wear.jpg');
+                   $("html").css("background-color", "#2B7129");
+                   $("#banner").html("Spring into the new year with new gear!");
+               break;  
+                   
+                   
+                case 'Fall':
+                    $('#logo').attr('src', 'images/fall.gif');
+                    $('#wear').attr('src', 'images/fall-wear.jpg');
+                    $("html").css("background-color", "#A81124");
+                    $("#banner").html("Fall into our autumn wear!");
+                break;
+                   
+                case 'Winter':
+                    $('#logo').attr('src', 'images/fall.gif');
+                    $('#wear').attr('src', 'images/fall-wear.jpg');
+                    $("html").css("background-color", "#005393");
+                    $("#banner").html("Gear up because Winter is coming!");
+                break;    
            }
             //alert(season);
 		});
